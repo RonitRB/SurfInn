@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity Tracker</title>
+  
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center; 
+    }
+
+    h1 {
+      margin-top: 100px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;  
+    }
+
+    .activities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 20px));
+      gap: 20px;
+    }
+
+    .activity {
+      background: gray;
+      border-radius: 20px;
+      padding: 30px;
+      font-size: 18px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0;
+    }
+
+    nav a{
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>My Activity Tracker</h1>
+
+  <nav> 
+  <a href="#">Login</a> 
+  <a href="#">Sign In</a> 
+  </nav> 
+
+  <main>
+
+    <div class="activities">
+    
+      <div class="activity">
+        <h3>Went for a walk</h3> 
+        <p>Health - ⭐⭐⭐⭐⭐</p>  
+      </div>
+
+      <div class="activity">
+        <h3>Learned coding</h3>
+        <p>Education - ⭐⭐⭐⭐</p>
+      </div>
+
+      <div class="activity">
+        <h3>Went to Gym</h3>
+        <p>Health - ⭐⭐⭐⭐⭐</p>
+      </div>
+
+      <div class="activity">
+        <h3>Learned dancing</h3>
+        <p>Skill - ⭐⭐⭐</p>
+      </div>
+
+    </div>
+    
+    <button>+ Add Activity</button>
+
+  </main>
+
+</body>
+</html>
